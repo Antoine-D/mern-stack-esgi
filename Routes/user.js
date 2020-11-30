@@ -61,7 +61,7 @@ userRoutes.route('/new').post(function(req, res) {
                 from: email_acc,
                 to: user.email,
                 subject: 'Welcome on Mern Stack !',
-                html: "<p>Please confirm your email following the link </p> <a href='" + 'https://morning-forest-31355.herokuapp.com/users/oken/'+token + "'> here </a>."
+                html: "<p>Please confirm your email following the link </p> <a href='" + 'https://morning-forest-31355.herokuapp.com/token/'+token + "'> here </a>."
                 //text: 'Please confirm your email following the link :
             };
 
