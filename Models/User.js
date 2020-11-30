@@ -24,7 +24,7 @@ let User = new Schema({
     },
     validated_email: {
         type: Boolean,
-        required: true
+        required: false
     },
     token: {
         type: String,

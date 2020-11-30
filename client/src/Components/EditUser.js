@@ -90,7 +90,7 @@ export default class EditUser extends Component {
             validated_email: this.state.validated_email,
             email: this.state.email,
         };
-        console.log( obj );
+
         axios.post(uri + '/users/update/'+this.props.match.params.id, obj, config)
             .then(res => console.log(res.data));
 

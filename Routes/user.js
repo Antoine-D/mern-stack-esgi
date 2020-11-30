@@ -61,7 +61,7 @@ userRoutes.route('/new').post(function(req, res) {
                 from: email_acc,
                 to: user.email,
                 subject: 'Welcome on Mern Stack !',
-                html: "<p>Please confirm your email following the link </p> <a href='" + 'http://localhost:3000/token/'+token + "'> here </a>."
+                html: "<p>Please confirm your email following the link </p> <a href='" + 'https://morning-forest-31355.herokuapp.com/token/'+token + "'> here </a>."
                 //text: 'Please confirm your email following the link :
             };
 
@@ -89,7 +89,10 @@ userRoutes.route('/update/:id').post( authenticateJWT, function(req, res) {
             user.lastname = req.body.lastname;
             user.birthdate = req.body.birthdate;
             user.email = req.body.email;
-            user.validated_email = req.body.validated_email;
+            if( req.body.validated_email ){
+                user.validated_email = req.body.validated_email;
+            }
+
            // user.password = req.body.password;
 
         user.save().then(user => {

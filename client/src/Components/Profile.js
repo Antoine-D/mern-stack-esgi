@@ -22,6 +22,8 @@ export default class Profile extends Component {
             name: '',
             lastname: '',
             birthdate: '',
+            email: '',
+            validated_email: '',
             success: false,
             error: ''
         }
@@ -35,7 +37,8 @@ export default class Profile extends Component {
                         name: response.data.name,
                         lastname: response.data.lastname,
                         birthdate: response.data.birthdate,
-                        email: response.data.email
+                        email: response.data.email,
+                        validated_email: response.data.validated_email
                     })
                     this.setState( { error: '' } );
                 })
@@ -72,6 +75,7 @@ export default class Profile extends Component {
             lastname: this.state.lastname,
             birthdate: this.state.birthdate,
             email: this.state.email,
+            validated_email: this.state.validated_email
         };
 
         axios.post(uri + '/users/update/'+this.props.location.state.user_id, obj, config)
