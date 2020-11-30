@@ -18,6 +18,10 @@ const connection = mongoose.connection;
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })*/
+const path = require('path');
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+});
 
 app.use(express.static('client/'));
 app.use('/users', UserRouter);
