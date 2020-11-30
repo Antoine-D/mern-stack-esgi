@@ -8,6 +8,7 @@
     "start": "node ../server.js",
     "server": "nodemon ../server.js"
   },
+  "proxy": "https://morning-forest-31355.herokuapp.com",
   "keywords": [],
   "author": "",
   "license": "ISC",

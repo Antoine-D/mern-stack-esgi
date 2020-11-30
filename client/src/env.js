@@ -6,5 +6,5 @@ module.exports = {
     config: {
         headers: { Authorization: `Bearer ${ user !== null ? user.token : null }` }
     },
-    api_uri: "http://localhost:8000"
+    api_uri: "https://morning-forest-31355.herokuapp.com"
 };
