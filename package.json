@@ -38,10 +38,11 @@
     "typescript": "^4.0.5",
     "validator": "^13.1.17",
     "web-vitals": "^0.2.4",
-    "yup": "^0.29.3"
+    "yup": "^0.29.3",
+    "cors": "^2.8.5"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node_modules/.bin/react-scripts start node server.js",
     "build": "node_modules/.bin/react-scripts build",
     "test": "node_modules/.bin/react-scripts test",
     "eject": "node_modules/.bin/react-scripts eject"
