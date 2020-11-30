@@ -26,8 +26,8 @@ connection.once('open', function() {
 })
 
 app.use('/users', UserRouter);
-//app.use(express.static(path.join("client", "build")))
-app.get("/", (req, res) => {
+app.use(express.static(path.join(__dirname, "client", "build")))
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 app.listen(PORT, function() {
