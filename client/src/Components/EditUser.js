@@ -106,7 +106,6 @@ export default class EditUser extends Component {
             );
         }
         else {
-            console.log( this.state )
             return (
                 <div>
                     <Nav/>

@@ -44,7 +44,6 @@ export default class verifyToken extends Component {
     }
     render() {
 
-        console.log( this.state)
         if( this.state.error !== "" ){
             return (
                 <div>
