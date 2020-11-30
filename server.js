@@ -6,13 +6,13 @@ const mongoose = require('mongoose');
 const PORT = 8000;
 
 
-const UserRouter = require('Routes/user.js');
+const UserRouter = require('./Routes/user.js');
 
 app.use(cors());
 app.use(bodyParser.json());
 
-const db = require("config/keys").mongoURI;
-
+//const db = require("config/keys").mongoURI;
+const db = "mongodb+srv://admin:Qe1ehZeYjuEnvRWZ@mern-stack.goyit.mongodb.net/mern-users?retryWrites=true&w=majority";
 mongoose.connect(db, { useNewUrlParser: true });
 const connection = mongoose.connection;
 
