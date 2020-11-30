@@ -45,5 +45,6 @@
     "client": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "proxy": "https://morning-forest-31355.herokuapp.com/",
   "homepage": "."
 }

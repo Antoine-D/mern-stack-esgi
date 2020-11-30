@@ -48,6 +48,7 @@
     "eject": "node_modules/.bin/react-scripts eject"
   },
   "homepage": ".",
+  "proxy": "https://morning-forest-31355.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",

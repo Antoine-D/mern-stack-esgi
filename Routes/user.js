@@ -60,13 +60,6 @@ userRoutes.route('/new').post(function(req, res) {
             let mailOptions = {
                 from: email_acc,
                 to: user.email,
-                headers: {
-                    'Content-Type': [
-                        'application/json',
-                        'text/plain',
-                        '*/*'
-                    ],
-                },
                 subject: 'Welcome on Mern Stack !',
                 html: "<p>Please confirm your email following the link </p> <a href='" + 'https://morning-forest-31355.herokuapp.com/token/'+token + "'> here </a>."
                 //text: 'Please confirm your email following the link :
