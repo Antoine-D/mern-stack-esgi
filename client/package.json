@@ -47,6 +47,7 @@
     "test": "node_modules/.bin/react-scripts test",
     "eject": "node_modules/.bin/react-scripts eject"
   },
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
