@@ -1,14 +1,14 @@
 FROM node:10
 
-RUN mkdir -p /app/client
-WORKDIR /app/client
+RUN mkdir -p /app/server
+WORKDIR /app/server
 
-COPY package*.json /app/client/
+COPY package*.json /app/server/
 
 RUN npm install
 
-COPY . /app/client/
+COPY server /app/server/
 
-EXPOSE 3000
+EXPOSE 8000
 
-CMD [ "npm", "start" ]
+CMD [ "node", "server.js" ]
