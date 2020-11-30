@@ -25,11 +25,9 @@ connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })
 
-app.use(express.static(path.join(__dirname, "client", "build")))
-
 app.use('/users', UserRouter);
-
-app.get("/*", (req, res) => {
+app.use(express.static(path.join(__dirname, "client", "build")))
+app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 app.listen(PORT, function() {
