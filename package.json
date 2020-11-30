@@ -42,7 +42,7 @@
     "cors": "^2.8.5"
   },
   "scripts": {
-    "start": "node_modules/.bin/react-scripts start node server.js",
+    "start": "node_modules/.bin/react-scripts start",
     "build": "node_modules/.bin/react-scripts build",
     "test": "node_modules/.bin/react-scripts test",
     "eject": "node_modules/.bin/react-scripts eject"
