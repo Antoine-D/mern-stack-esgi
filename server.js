@@ -14,12 +14,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-/*mongoose.connect(db, { useNewUrlParser: true });
+mongoose.connect(db, { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
-})*/
+})
 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
