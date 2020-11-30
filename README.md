@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Start the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+git clone the project, get into the root directory and run ```docker-compose build``` to build the Docker images.
+
+Then ```docker-compose up``` and it's ready to work.
 
 ## Available Scripts
 
