@@ -14,7 +14,11 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-mongoose.connect(db, { useNewUrlParser: true });
+mongoose.connect(db, function (err) {
+    if (err) {
+        console.log(err);
+    }
+});
 const connection = mongoose.connection;
 
 connection.once('open', function() {
